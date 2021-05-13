@@ -1,0 +1,33 @@
+{
+  "name": "frogamer",
+  "version": "1.0.0",
+  "description": "BEAT THE FROG",
+  "main": "app.js",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "dotenv": "^9.0.2",
+    "history": "^5.0.0",
+    "mongodb": "^3.6.6",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.3",
+    "request": "^2.88.2",
+    "web-vitals": "^1.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bard-Budist/frogame.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bard-Budist/frogame/issues"
+  },
+  "homepage": "https://github.com/Bard-Budist/frogame#readme"
+}
