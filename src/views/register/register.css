@@ -1,0 +1,83 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+.register {
+  background: #2ab157;
+  width: 100vw;
+  display: flex;
+  height: 100vh;
+  place-content: center;
+  align-items: center;
+}
+
+.register-box {
+  background: white;
+  display: flex;
+  width: 50%;
+  height: 485px;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0.4px 0.4px rgba(255, 255, 255, 0.109),
+    0 1px 1px rgba(255, 255, 255, 0.155),
+    0 2.1px 2.1px rgba(255, 255, 255, 0.195),
+    0 4.4px 4.4px rgba(255, 255, 255, 0.241),
+    0 12px 12px rgba(255, 255, 255, 0.35);
+}
+
+
+.register-box-intern {
+  display: grid;
+  width: 75%;
+  text-align: center;
+  margin: auto;
+
+}
+
+.register-box-intern div {
+  margin: 5px;
+
+}
+
+.register-section-1 {
+  width: 50%;
+  display: flow-root;
+  text-align: center;
+}
+
+.register-section-2 {
+  width: 50%;
+}
+
+.register-section-2 p {
+  font-size: 30px;
+}
+
+.box-image-register {
+  width: 100%;
+  text-align: center;
+}
+
+
+.btn-register {
+  width: 100px;
+  background: #2ab157 !important;
+}
+
+.error-register {
+  color: red;
+  margin: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+  .register-section-2 {
+    display: none;
+  }
+  .register-section-1 {
+    width: 100%;
+  }
+  .register-box {
+    width: 90%;
+  }
+
+}

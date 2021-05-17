@@ -37,5 +37,12 @@
 
 .btn-login {
   width: 100px;
-  background: #2ab157;
+  background: #2ab157 !important;
+}
+
+
+.password-worn {
+  margin: auto;
+  color: red;
+  margin-top: 8px !important;
 }
