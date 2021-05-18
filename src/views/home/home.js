@@ -1,14 +1,27 @@
 import React, { useEffect, useState } from 'react';
 import { TextField, Tooltip } from '@material-ui/core';
 import profile from '../../media/profile.png';
+import love from '../../media/love.png';
 import axios from 'axios';
 import './home.css';
+
+const controlOpenModal = () => {
+  const show = localStorage.getItem('showAbout');
+  if (show != null) {
+    if (show === "false")
+      return false;
+    return true;
+  } else {
+    return true;
+  }
+}
 
 const Home = (props) => {
   const {
     history
   } = props;
   const [userData, setUserData] = useState({});
+  const [showPop, setShowPop] = useState(controlOpenModal());
 
   useEffect(() => {
     axios.get('http://localhost:3001/api/users',
@@ -25,10 +38,29 @@ const Home = (props) => {
         setUserData(data)
       }
     })
-  }, [history]);
+  }, []);
+
+  const handleAbout = () => {
+    setShowPop(false);
+    localStorage.setItem('showAbout', false);
+  }
 
   return(
     <div className="home">
+      {showPop &&
+        <div className="main-pop">
+          <div className="popup-about" onClick={handleAbout}>
+            <h1>The Frogamer</h1>
+            <p>This site is based on hitting Frogamer, the one little frog who likes to help others when you have rage playing video games.
+
+            Click on the green frog to start, apart from that you have a score to see how long you've been hitting me! </p>
+            <div className="img-text">
+              <img src={love} alt="love"/>
+              <p>Don't worry about me, I'm an immortal frog</p>
+            </div>
+          </div>
+        </div>
+      }
       <div className="profile-section">
         <div className="profile-photo" onClick={() => {
           history.push('/game')

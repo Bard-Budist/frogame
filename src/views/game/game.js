@@ -45,7 +45,6 @@ const Game = (props) => {
         'Authorization': `Bearer ${localStorage.getItem('TOKEN')}` 
       }
     }).then((result) => {
-      console.log(result.data)
       if (result.data.refresh) {
         history.push("/login");
       }

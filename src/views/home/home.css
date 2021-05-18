@@ -22,6 +22,45 @@
   color: black !important;
 }
 
+.popup-about {
+  width: 80%;
+  height: 50%;
+  position: fixed;
+  background: whitesmoke;
+  z-index: 9999;
+  border-radius: 25px;
+}
+
+.popup-about p {
+  font-size: 25px;
+  text-align: justify;
+  margin: 20px;
+}
+
+.popup-about h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+.img-text {
+  display: flex;
+  place-content: center;
+  align-items: center
+}
+
+.main-pop {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  /* display: contents; */
+  background: rgb(0 0 0 / 50%);
+  z-index: 9;
+  display: flex;
+  place-items: center;
+  place-content: center;
+}
+
+
 
 @media only screen and (max-width: 600px) {
   
@@ -30,4 +69,24 @@
     height: 95%;
   }
 
+  .popup-about {
+    width: 90%;
+    height: 95%;
+    position: fixed;
+    background: whitesmoke;
+    z-index: 9999;
+    border-radius: 25px;
+    overflow: auto;
+  }
+
+  .img-text {
+    display: block;
+  }
+
+  .popup-about img {
+    margin: auto;
+    display: block;
+  }
+ 
+  
 }
