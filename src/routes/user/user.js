@@ -25,7 +25,7 @@ router.post('/users', async (res, req) => {
       password);
       req.send(result)
   } catch (error) {
-    console.log("Error creating user" + error);
+    req.status(500).send({"Error": error});
   }
 })
 
@@ -41,6 +41,5 @@ router.get('/users', async (res, req) => {
     req.status(500).send({"Error": error});
   }
 })
-
 
 module.exports = router;

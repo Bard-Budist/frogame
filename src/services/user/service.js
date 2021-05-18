@@ -30,7 +30,7 @@ const createUser = async (name, lastName, userName, email, password) => {
       }
     }
     bcrypt.hash(password, saltRounds, async function(err, hash) {
-      return await user.insert({
+      await user.insertOne({
         name: name,
         email: email,
         lastName: lastName,
@@ -39,7 +39,9 @@ const createUser = async (name, lastName, userName, email, password) => {
         points: 0
       });
     });
-    console.log("HOLII")
+    return {
+      status: 'User created'
+    }
   } catch (error){
     console.log(error)
     return {
