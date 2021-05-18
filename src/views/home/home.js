@@ -24,7 +24,7 @@ const Home = (props) => {
   const [showPop, setShowPop] = useState(controlOpenModal());
 
   useEffect(() => {
-    axios.get('http://localhost:3001/api/users',
+    axios.get('https://back-froggy.herokuapp.com/api/users',
     {
       headers: {
         'Authorization': `Bearer ${localStorage.getItem('TOKEN')}` 

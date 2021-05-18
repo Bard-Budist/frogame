@@ -23,7 +23,7 @@ const Register = (props) => {
       setError(true);
       return;
     }
-    axios.post('http://localhost:3001/api/users', {
+    axios.post('https://back-froggy.herokuapp.com/api/users', {
       name: name,
       lastName: lastName,
       email: email,

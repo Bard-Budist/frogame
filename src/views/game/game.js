@@ -36,7 +36,7 @@ const Game = (props) => {
   });
 
   const updatePoints = () => {
-    axios.put('http://localhost:3001/api/game/points',
+    axios.put('https://back-froggy.herokuapp.com/api/game/points',
     {
       points: numberClicks
     },
