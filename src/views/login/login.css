@@ -46,3 +46,14 @@
   color: red;
   margin-top: 8px !important;
 }
+
+.register-txt {
+  margin-top: 5px;
+  text-align: end;
+  margin-right: 30px;
+  color: #2ab157;
+}
+
+.login-box a {
+  margin-left: auto;
+}

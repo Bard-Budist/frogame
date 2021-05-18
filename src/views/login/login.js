@@ -43,6 +43,7 @@ const Login = (props) => {
               }
           }/>
         </div>
+        <a className="register-txt" href="/register" style={{marginTop: 5}}><strong>Register</strong></a>
         {error &&
           <p className="password-worn">Incorrect username or password</p>
         }    
